@@ -1,5 +1,7 @@
 # “镍欧佩克”背后：印尼的资源民族主义
 
+> Nickel-Trade-offs-LLM-based-Multi-agent-Game-Simulation
+
 印尼镍链历史现实复现与多主体政策协商网站。
 
 ## 页面结构
