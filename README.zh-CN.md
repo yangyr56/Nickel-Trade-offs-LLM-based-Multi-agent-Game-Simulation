@@ -2,7 +2,9 @@
 
 > 一个基于新古典现实主义的印尼镍矿 RKAB 配额政策教学与战略协商沙盘。
 
-![项目封面](assets/cover-nickel-tradeoff.png)
+<p align="center">
+  <img src="assets/cover-nickel-tradeoff-hero.jpg" alt="Nickel Trade-off：印尼镍配额协商" width="100%">
+</p>
 
 [在线沙盘](https://yangyr56.github.io/Nickel-Trade-offs-LLM-based-Multi-agent-Game-Simulation/) ·
 [English README](README.md) ·
@@ -13,6 +15,12 @@
 本项目用于国际关系、国际政治经济、资源民族主义和关键矿产供应链教学。网站包含历史现实复现与多主体政策协商两部分，展示国际体系压力如何经过战略认知、国内联盟、制度能力和利益博弈，转化为印尼镍配额政策。
 
 当前 V2 版本使用 `policy-quota-v3` 与 `KB-20261030-3`，知识库包含 85 条观察记录、19 条地方与社区补充证据和 17 个可见来源。
+
+## 界面预览
+
+下图为已部署版本的历史演变页面：
+
+![历史演变页面预览](assets/cover-nickel-tradeoff.png)
 
 ## 首次必读
 
@@ -76,7 +84,7 @@ npm start
 ## 项目结构
 
 ```text
-├── assets/                      # 封面和视觉资源
+├── assets/                      # 主封面、界面预览和视觉资源
 ├── docs/                        # 背景、角色卡、教师指南、决议模板
 ├── public/                      # 前端、历史模块与数据
 ├── knowledge/                   # 知识库、来源和编码记录
