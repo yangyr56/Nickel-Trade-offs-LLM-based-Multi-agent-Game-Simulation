@@ -1,0 +1,17 @@
+{
+  "scope": "deterministic and mock model checks, not live agent quality",
+  "combinations": 81,
+  "checks": [
+    "all 81 combinations ignore removed price driver; tightening never guarantees profit",
+    "performance support accepts basic training and does not require service bundle",
+    "services cannot substitute for required training milestone arrangement",
+    "basic service feedback participation is not assumed from silence",
+    "preparation consumes additional central coordination resources",
+    "first round receives four preferences and does not invent previous feedback",
+    "central AI selects validated candidate without inventing cooperation or changing route",
+    "central AI cannot select an over-budget candidate, even after repair",
+    "invalid citation remains rejected and explicit allowed IDs guide a validated repair",
+    "all three routes and alternative preferences reach central context without changing resources",
+    "stale frontend rejected before model charges"
+  ]
+}

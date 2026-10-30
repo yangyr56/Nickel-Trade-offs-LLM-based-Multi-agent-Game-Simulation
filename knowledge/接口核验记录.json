@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "kind": "mock-provider checks only, not live model verification",
+  "checks": [
+    "anonymous requests cannot spend API credits",
+    "cross-origin requests rejected before provider call",
+    "unmet model conditions stay pending rather than consent",
+    "identical request reuses short-lived per-user response",
+    "AI cannot replace rule-calculated stance",
+    "invented source IDs cannot enter the round",
+    "missing tasks rejected rather than silently accepted",
+    "model cannot replace rule-given impacts",
+    "previous-version readback rejected",
+    "wrong readback gets one genuine model correction, never overwritten",
+    "equivalent casing, fullwidth and explicit selected values accepted",
+    "missing readback remains rejected after bounded repair",
+    "extra quantitative claims rejected",
+    "unresolved conditions in acceptance reason stay pending",
+    "public UI contains no server key",
+    "one actor may accept production task and refuse training separately"
+  ]
+}

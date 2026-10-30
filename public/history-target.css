@@ -1,0 +1,120 @@
+:root {
+  --bg: #f4f3ed;
+  --paper: #f4f3ed;
+  --surface: #fffef9;
+  --surface-soft: #f8f7f1;
+  --ink: #172c2c;
+  --ink-soft: #354846;
+  --muted: #66746d;
+  --line: #dcded3;
+  --line-strong: #c7c9bc;
+  --navy: #266e58;
+  --navy-soft: #e4eee8;
+  --green: #266e58;
+  --green-soft: #e7efe9;
+  --copper: #a84f2c;
+  --copper-soft: #f2e4da;
+  --red: #a44037;
+  --red-soft: #f4e4e0;
+  --amber: #a84f2c;
+  --amber-soft: #f2e4da;
+}
+
+body.history-embed {
+  min-width: 0;
+  background: var(--paper);
+}
+
+.history-embed .page-shell {
+  width: 100%;
+  margin: 0;
+}
+
+.history-embed .site-header {
+  display: none;
+}
+
+.history-embed .intro-band {
+  padding: 0 0 34px;
+}
+
+.history-embed .intro-band h1 {
+  max-width: 1000px;
+  color: var(--ink);
+  font-family: Georgia, "Songti SC", "SimSun", serif;
+  font-size: clamp(34px, 4.4vw, 58px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+.history-embed .intro-band p {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.history-embed .intro-band .analysis-subtitle {
+  font-size: 12px;
+}
+
+.history-embed .history-section {
+  padding: 42px 0;
+}
+
+.history-embed .history-section:first-of-type {
+  border-top: 1px solid var(--line);
+}
+
+.history-embed .history-panel,
+.history-embed .diagram-panel,
+.history-embed .network-side-panel {
+  background: var(--surface);
+}
+
+.history-embed .section-heading h2 {
+  font-family: Georgia, "Songti SC", "SimSun", serif;
+  font-weight: 500;
+}
+
+.history-embed .site-footer {
+  margin-top: 4px;
+  padding: 22px 0 6px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .history-embed .intro-band {
+    padding: 0 0 26px;
+  }
+
+  .history-embed .intro-band h1 {
+    font-size: 34px;
+  }
+
+  .history-embed .history-section {
+    padding: 34px 0;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .history-embed .overview-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  }
+
+  .history-embed .policy-chart svg {
+    min-width: 600px;
+  }
+
+  .history-embed .indonesia-map svg {
+    min-width: 460px;
+  }
+
+  .history-embed .network-analysis-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+
+  .history-embed .network-side-panel {
+    position: sticky;
+    top: 18px;
+  }
+}

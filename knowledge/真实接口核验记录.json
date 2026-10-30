@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-29T12:08:55.003Z",
+  "scope": "One real provider call through worker with local test identity; not hosted sign-in verification",
+  "http_status": 200,
+  "result": {
+    "actor": "MINER",
+    "speech": "我是卖矿石的，设备、工人和合同都已排好。突然限产，收入断档，损失收不回。所以我赞成先给准备期、分阶段调整；生产调整我愿配合，但培训要出钱，需政府也投入、分阶段来，不能全压企业。地方用水用电问题请中央和地方落实责任、让居民参与监督，不要都算到矿企头上。",
+    "stance": "conditional",
+    "strategy": "以接受分阶段限产和培训投入换取六个月准备期与政府配套，同时把地方服务成本留在政府框架内。",
+    "requests": [
+      {
+        "policy_id": "P04",
+        "option_id": "C",
+        "reason": "若要我们承担培训，希望支持与培训公共服务进度挂钩分批落实，而非只留现有安排。"
+      }
+    ],
+    "retained_clauses": [
+      {
+        "policy_id": "P02",
+        "option_id": "C",
+        "reason": "支持先准备六个月再分步调整，但要求明确复评节点与供矿安排说明，避免打乱合同。"
+      },
+      {
+        "policy_id": "P05",
+        "option_id": "C",
+        "reason": "愿承担部分培训投入，但须政府按阶段配套、同步到位，不接受企业单独出资。"
+      },
+      {
+        "policy_id": "P11",
+        "option_id": "C",
+        "reason": "地方服务压力需中央配套、地方实施并季度公开回应，企业不承担居民服务运营费用。"
+      }
+    ],
+    "commitments": [
+      {
+        "policy_id": "P02",
+        "decision": "accept",
+        "conditions": [
+          {
+            "policy_id": "P02",
+            "option_id": "C"
+          }
+        ],
+        "reason": "分阶段调整并提前说明时间与复评方式，可把合同和开工打乱的风险降到可接受。"
+      },
+      {
+        "policy_id": "P05",
+        "decision": "pending",
+        "conditions": [
+          {
+            "policy_id": "P05",
+            "option_id": "C"
+          }
+        ],
+        "reason": "愿投入本企业培训资源，但须政府共同投入且分阶段，合作未确定前先不定案。"
+      }
+    ],
+    "evidence_ids": [
+      "B024",
+      "B034",
+      "CTX1",
+      "CTX3",
+      "CTX4"
+    ],
+    "uncertainty": "P04-C与P05-C、P11-C的联动能否落地、支持额度与时间表尚不明确；年度化RKAB对卖矿收入的具体影响资料未能确认。",
+    "impacts": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "offers": {
+      "P02": true,
+      "P05": null
+    },
+    "mode": "deepseek",
+    "model": "deepseek-flash",
+    "knowledge_version": "KB-20261029-1",
+    "source_refs": [
+      {
+        "id": "B024",
+        "summary": "报道APNI负责人担忧年度经营计划与申报负担",
+        "source": "PT06",
+        "location": "提取页1；文本行40；锚点cukup rumit",
+        "url": "",
+        "limitation": "采访为9月30日，无法确定在内部定案之前"
+      },
+      {
+        "id": "B034",
+        "summary": "停炉涉及部件更换成本、保热及重新升温困难，并存在替代采购线索",
+        "source": "INT-01",
+        "location": "提取页1；文本行581；锚点[01:08:54 - 01:09:15]",
+        "url": "",
+        "limitation": "用户补充部件更换可能花费几百万元，炉需保热且重新升温至一千多度困难；作为成本和热工约束，不外推全部企业，不直接采用为通用工程参数"
+      },
+      {
+        "id": "CTX1",
+        "summary": "印尼能源与矿产资源部在2026年6月25日的镍生产计划评估说明中，把上游经营、下游原料供应、价格和储量放在一起考虑。这说明生产调整要处理多项目标之间的取舍。",
+        "source": "政府为什么要兼顾矿山与工厂？",
+        "location": "",
+        "url": "https://www.esdm.go.id/id/media-center/arsip-berita/kementerian-esdm-belum-putuskan-besaran-rkab-nikel-2026",
+        "limitation": ""
+      },
+      {
+        "id": "CTX3",
+        "summary": "莫罗瓦利县2025年7月的规划会议，把地方发展、公共服务和工业地区的环境压力纳入讨论。产业增长带来机会，地方也要安排服务和治理工作，这正是地方席位要争取配套的原因。",
+        "source": "产区为什么同时谈发展与公共服务？",
+        "location": "",
+        "url": "https://morowalikab.go.id/news/kabupaten-morowali-gelar-musrenbang-rpjmd-2025-2029-di-kecamatan-bahodopi",
+        "limitation": ""
+      },
+      {
+        "id": "CTX4",
+        "summary": "Jaring Nusa KTI在2025年11月报道了Kawasi村居民围绕清洁用水和电力问题的抗议与诉求。这让“社区利益”落到具体生活上：日常服务是否可靠，问题是否得到处理。报道中的居民引述与组织意见各有其来源身份。",
+        "source": "居民提出的生活问题是什么？",
+        "location": "",
+        "url": "https://jaringnusa.id/desa-kawasi-krisis-air-bersih-dan-listrik-warga-melakukan-protes/",
+        "limitation": ""
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3968,
+      "completion_tokens": 468,
+      "total_tokens": 4436,
+      "prompt_tokens_details": {
+        "cached_tokens": 3712
+      },
+      "prompt_cache_hit_tokens": 3712,
+      "prompt_cache_miss_tokens": 256
+    },
+    "generated_at": "2026-10-29T12:08:55.002Z",
+    "validation": "格式、菜单范围、任务覆盖、引用编号及利益方向已核对；未自动验证自然语言事实真伪。"
+  }
+}

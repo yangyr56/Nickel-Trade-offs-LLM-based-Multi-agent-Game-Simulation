@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-29T12:21:19.531Z",
+  "scope": "One real provider call through worker with local test identity and constructed public history fixture; not hosted sign-in verification",
+  "http_status": 200,
+  "result": {
+    "actor": "PROCESSOR",
+    "current_selection": {
+      "P02": "C",
+      "P04": "B",
+      "P05": "C",
+      "P11": "C"
+    },
+    "speech": "上一轮我提的准备期、共同培训和服务配套，这一轮草案里看到了回应：六个月准备比马上调整更能让我协调合同和设备；培训由政府和地方分担，初期压力小一些；服务也有中央配套和居民监督。但有两件事要讲清楚：一是不增加额外财政支持，我承担培训投入还得自己消化，希望分阶段兑现别一次性压下来；二是生产调整的复评依据和通知方式要提前说清，别刚改完又变。",
+    "stance": "conditional",
+    "strategy": "接受当前草案框架，以兑现培训分担和调整透明度为条件换取配合。",
+    "requests": [],
+    "retained_clauses": [
+      {
+        "policy_id": "P02",
+        "option_id": "C",
+        "reason": "确认复评前先通报供矿与生产情况，让我能安排长期采购与设备计划。"
+      },
+      {
+        "policy_id": "P05",
+        "option_id": "C",
+        "reason": "要求把分阶段培训的出资节奏和检查方式讲明，避免企业初期负担过重。"
+      }
+    ],
+    "commitments": [
+      {
+        "policy_id": "P02",
+        "decision": "accept",
+        "conditions": [
+          {
+            "policy_id": "P02",
+            "option_id": "C"
+          }
+        ],
+        "reason": "准备期能减少突然停炉带来的热工与复产损失，我愿意配合采购和生产安排。"
+      },
+      {
+        "policy_id": "P05",
+        "decision": "accept",
+        "conditions": [
+          {
+            "policy_id": "P05",
+            "option_id": "C"
+          }
+        ],
+        "reason": "共同投入分阶段培训可接受，但需明确政府与地方分担到位。"
+      }
+    ],
+    "evidence_ids": [
+      "CTX1",
+      "CTX2",
+      "B034",
+      "N003"
+    ],
+    "uncertainty": "访谈提到停炉损失与复产困难，但不清楚不同工艺和规模的具体成本；分阶段培训各期如何检查也待明确。",
+    "impacts": [
+      1,
+      -1,
+      1,
+      1
+    ],
+    "offers": {
+      "P02": true,
+      "P05": true
+    },
+    "mode": "deepseek",
+    "model": "deepseek-flash",
+    "knowledge_version": "KB-20261029-1",
+    "source_refs": [
+      {
+        "id": "N003",
+        "summary": "公司报告2025年11月开始计划性3号炉重建，公告时目标2026年5月完成",
+        "source": "N02",
+        "location": "PDF物理页1—2，炉体重建、矿石销售、价格与成本段",
+        "url": "",
+        "limitation": "公告中的目标日期不是已完成证明；不同工艺和计划/非计划停炉不能互推"
+      },
+      {
+        "id": "B034",
+        "summary": "停炉涉及部件更换成本、保热及重新升温困难，并存在替代采购线索",
+        "source": "INT-01",
+        "location": "提取页1；文本行581；锚点[01:08:54 - 01:09:15]",
+        "url": "",
+        "limitation": "用户补充部件更换可能花费几百万元，炉需保热且重新升温至一千多度困难；作为成本和热工约束，不外推全部企业，不直接采用为通用工程参数"
+      },
+      {
+        "id": "CTX1",
+        "summary": "印尼能源与矿产资源部在2026年6月25日的镍生产计划评估说明中，把上游经营、下游原料供应、价格和储量放在一起考虑。这说明生产调整要处理多项目标之间的取舍。",
+        "source": "政府为什么要兼顾矿山与工厂？",
+        "location": "",
+        "url": "https://www.esdm.go.id/id/media-center/arsip-berita/kementerian-esdm-belum-putuskan-besaran-rkab-nikel-2026",
+        "limitation": ""
+      },
+      {
+        "id": "CTX2",
+        "summary": "PT Vale在2026年1月15日的声明中介绍，生产计划获批后恢复经营，并继续推进长期项目。对企业而言，许可与时间安排会关系到生产衔接和投资计划。这里引用的是企业自身的说明。",
+        "source": "为什么企业在意审批和投资安排？",
+        "location": "",
+        "url": "https://vale.com/documents/44618/1438419/IN%2B-%2BPTVI%2B-%2BSiaran%2BPers%2B-%2BRKAB%2B2026.pdf/999f9d02-933f-6a19-7cb4-3d6bbc730083?download=false&t=1768464262898&version=1.0",
+        "limitation": ""
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4620,
+      "completion_tokens": 400,
+      "total_tokens": 5020,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 4620
+    },
+    "generated_at": "2026-10-29T12:21:19.530Z",
+    "validation": "格式、菜单范围、任务覆盖、引用编号及利益方向已核对；未自动验证自然语言事实真伪。"
+  }
+}

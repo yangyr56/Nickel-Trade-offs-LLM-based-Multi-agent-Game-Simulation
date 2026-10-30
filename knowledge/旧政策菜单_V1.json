@@ -1,0 +1,488 @@
+{
+  "P02": {
+    "name": "分阶段安排与复评",
+    "options": {
+      "B": {
+        "text": "维持已有安排，不新增安排",
+        "actor_effects": {},
+        "government_effects": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": {},
+        "required": [],
+        "rule_id": "P02_B",
+        "evidence": [
+          "N001",
+          "N002",
+          "B024",
+          "B034"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "A": {
+        "text": "试点额外约束立即执行，三个月复评，无过渡支持",
+        "actor_effects": {
+          "MINER": [
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "PROCESSOR": [
+            -1,
+            -1,
+            0,
+            0
+          ]
+        },
+        "government_effects": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "cost": {
+          "MINER": 1,
+          "PROCESSOR": 1
+        },
+        "required": [
+          "MINER",
+          "PROCESSOR"
+        ],
+        "rule_id": "P02_A",
+        "evidence": [
+          "N001",
+          "N002",
+          "B024",
+          "B034"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "C": {
+        "text": "试点设置六个月准备期，资料核对后分段实施并复评",
+        "actor_effects": {
+          "MINER": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "PROCESSOR": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        "government_effects": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "cost": {
+          "MINER": 1,
+          "PROCESSOR": 1
+        },
+        "required": [
+          "MINER",
+          "PROCESSOR"
+        ],
+        "rule_id": "P02_C",
+        "evidence": [
+          "N001",
+          "N002",
+          "B024",
+          "B034"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      }
+    }
+  },
+  "P04": {
+    "name": "有期限财政支持建议",
+    "options": {
+      "B": {
+        "text": "维持现行财政安排",
+        "actor_effects": {},
+        "government_effects": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": {},
+        "required": [],
+        "rule_id": "P04_B",
+        "evidence": [
+          "N010",
+          "N017"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "A": {
+        "text": "有限试点统一申请一年支持，金额限本局3单位，不附培训条件",
+        "actor_effects": {
+          "MINER": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "PROCESSOR": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "government_effects": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "cost": {
+          "GOV": 3
+        },
+        "required": [],
+        "rule_id": "P04_A",
+        "evidence": [
+          "N010",
+          "N017"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "C": {
+        "text": "一年内按核验里程碑拨付2单位支持；培训与服务条款均须被选择并具备合作",
+        "actor_effects": {
+          "MINER": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "PROCESSOR": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "government_effects": [
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "cost": {
+          "GOV": 2
+        },
+        "required": [
+          "MINER",
+          "PROCESSOR"
+        ],
+        "rule_id": "P04_C",
+        "evidence": [
+          "N010",
+          "N017"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      }
+    }
+  },
+  "P05": {
+    "name": "培训与本地供应能力合作",
+    "options": {
+      "B": {
+        "text": "维持已有安排，不新增培训承诺",
+        "actor_effects": {},
+        "government_effects": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": {},
+        "required": [],
+        "rule_id": "P05_B",
+        "evidence": [
+          "N011",
+          "B013",
+          "O02"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "A": {
+        "text": "企业自行承担首期培训投入，未安排共同支持",
+        "actor_effects": {
+          "MINER": [
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "PROCESSOR": [
+            0,
+            -1,
+            0,
+            1
+          ],
+          "LOCAL": [
+            1,
+            0,
+            -1,
+            0
+          ],
+          "COMMUNITY": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "government_effects": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "cost": {
+          "MINER": 2,
+          "PROCESSOR": 2,
+          "LOCAL": 1
+        },
+        "required": [
+          "MINER",
+          "PROCESSOR",
+          "LOCAL"
+        ],
+        "rule_id": "P05_A",
+        "evidence": [
+          "N011",
+          "B013",
+          "O02"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "C": {
+        "text": "分期培训与供应试点，企业各1单位，政府1单位，半年核验再讨论扩展",
+        "actor_effects": {
+          "MINER": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "PROCESSOR": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "LOCAL": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "COMMUNITY": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        "government_effects": [
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "cost": {
+          "MINER": 1,
+          "PROCESSOR": 1,
+          "LOCAL": 1,
+          "GOV": 1
+        },
+        "required": [
+          "MINER",
+          "PROCESSOR",
+          "LOCAL"
+        ],
+        "rule_id": "P05_C",
+        "evidence": [
+          "N011",
+          "B013",
+          "O02"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      }
+    }
+  },
+  "P11": {
+    "name": "公共服务任务与配套资源",
+    "options": {
+      "B": {
+        "text": "维持既有服务责任，不作新增承诺",
+        "actor_effects": {},
+        "government_effects": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": {},
+        "required": [],
+        "rule_id": "P11_B",
+        "evidence": [
+          "O03",
+          "O04",
+          "N016",
+          "N006"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "A": {
+        "text": "地方增加服务任务，未新增运营资源和参与安排",
+        "actor_effects": {
+          "LOCAL": [
+            0,
+            -1,
+            -1,
+            -1
+          ],
+          "COMMUNITY": [
+            null,
+            0,
+            -1,
+            0
+          ]
+        },
+        "government_effects": [
+          0,
+          0,
+          0,
+          null,
+          -1,
+          0
+        ],
+        "cost": {
+          "LOCAL": 2
+        },
+        "required": [
+          "LOCAL"
+        ],
+        "rule_id": "P11_A",
+        "evidence": [
+          "O03",
+          "O04",
+          "N016",
+          "N006"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      },
+      "C": {
+        "text": "一年服务试点：政府配套2单位，地方1单位，社区参与核查1单位，季度公开回应",
+        "actor_effects": {
+          "MINER": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "PROCESSOR": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "LOCAL": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "COMMUNITY": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        "government_effects": [
+          -1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "cost": {
+          "GOV": 2,
+          "LOCAL": 1,
+          "COMMUNITY": 1
+        },
+        "required": [
+          "LOCAL",
+          "COMMUNITY"
+        ],
+        "rule_id": "P11_C",
+        "evidence": [
+          "O03",
+          "O04",
+          "N016",
+          "N006"
+        ],
+        "status": "D：方向、时限、投入、效用均为场景假设；证据只支持议题线索",
+        "real_legal_gate": null,
+        "unknown": "真实成本、效应强度、全国授权及财政审批未识别"
+      }
+    }
+  }
+}

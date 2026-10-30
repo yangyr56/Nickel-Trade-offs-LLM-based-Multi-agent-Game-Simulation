@@ -1,0 +1,35 @@
+{
+  "rule": "interest-direction-v1",
+  "scope": "standard simulation capacity, potential cooperation; not observed attitudes or frequencies",
+  "feasible": 52,
+  "counts": {
+    "MINER": {
+      "support": 4,
+      "oppose": 25,
+      "balanced": 2,
+      "unclear": 21
+    },
+    "PROCESSOR": {
+      "support": 14,
+      "oppose": 10,
+      "balanced": 2,
+      "unclear": 26
+    },
+    "LOCAL": {
+      "support": 25,
+      "oppose": 0,
+      "balanced": 11,
+      "unclear": 16
+    },
+    "COMMUNITY": {
+      "support": 38,
+      "oppose": 0,
+      "balanced": 6,
+      "unclear": 8
+    }
+  },
+  "issues": [
+    "地方与社区在当前可提出菜单中没有明确净负向组合；影响表及政策取舍仍需证据校准，不人为补负分。",
+    "未知范围不是统计置信区间；角色权重及指标等距为研究设定。"
+  ]
+}

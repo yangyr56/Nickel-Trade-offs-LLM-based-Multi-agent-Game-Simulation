@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="“镍欧佩克”背后：基于社会网络分析、机器学习和实证数据研究印尼资源民族主义"
+    />
+    <meta name="theme-color" content="#183f55" />
+    <title>“镍欧佩克”背后：印尼的资源民族主义</title>
+    <link rel="stylesheet" href="history.css" />
+    <link rel="stylesheet" href="history-target.css" />
+  </head>
+  <body class="history-embed">
+    <div class="page-shell" id="top">
+      <main>
+        <section class="intro-band">
+          <span class="eyebrow">INDONESIA NICKEL · 2020–2026</span>
+          <h1>“镍欧佩克”背后：印尼的资源民族主义</h1>
+          <p class="analysis-subtitle">
+            基于社会网络分析、机器学习和实证数据的分析
+          </p>
+        </section>
+
+        <section class="history-section overview-section" id="overview">
+          <div class="section-heading">
+            <div>
+              <span class="section-index">01</span>
+              <h2>镍价历史变化趋势</h2>
+            </div>
+          </div>
+          <div class="overview-grid">
+            <article class="history-panel chart-panel">
+              <div class="chart-heading">
+                <div>
+                  <span class="micro-label">POLICY × PRICE × PROFIT PRESSURE</span>
+                  <h3>政策压力与 LME 镍价趋势</h3>
+                </div>
+                <span id="chartSummary" class="data-chip"></span>
+              </div>
+              <div
+                id="policyChart"
+                class="policy-chart"
+                aria-label="2020至2026年印尼镍政策压力、LME镍价和企业利润压力代理"
+              ></div>
+              <div id="forecastStrip" class="forecast-strip"></div>
+            </article>
+
+            <article class="history-panel map-side">
+              <div class="chart-heading">
+                <div>
+                  <span class="micro-label">SPATIAL DISTRIBUTION</span>
+                  <h3>镍矿区和工业园空间分布</h3>
+                </div>
+                <span id="mapStats" class="data-chip"></span>
+              </div>
+              <div id="mapLayerControls" class="layer-controls"></div>
+              <div
+                id="indonesiaMap"
+                class="indonesia-map"
+                aria-label="印度尼西亚镍矿和工业园空间分布图"
+              ></div>
+              <div class="map-key">
+                <span><i class="key-dot mining"></i>矿区集群</span>
+                <span><i class="key-square industrial"></i>工业园</span>
+                <span><i class="key-line capital"></i>资本方向</span>
+                <span><i class="key-area environment"></i>环境压力示意</span>
+              </div>
+            </article>
+          </div>
+          <div id="eventExplainer" class="event-explainer"></div>
+        </section>
+
+        <section class="history-section" id="actor-network">
+          <div class="section-heading">
+            <div>
+              <span class="section-index">02</span>
+              <h2>国际体系行为体关系图谱</h2>
+            </div>
+          </div>
+          <div class="diagram-panel international-panel">
+            <div class="legend actor-legend">
+              <span><i class="edge-swatch supply"></i>供给方</span>
+              <span><i class="edge-swatch demand"></i>需求方</span>
+              <span>圆大小 = 全球份额</span>
+              <span>线宽 = 份额乘积关联强度</span>
+            </div>
+            <div
+              id="internationalGraph"
+              class="international-graph"
+              aria-label="全球镍供给方与需求方国家关系图谱"
+            ></div>
+            <p class="international-note">
+              2024 年全球矿端产量约 352 万吨、精炼镍消费约 342 万吨。连线表示供给份额与需求份额的结构性匹配，不代表实际双边贸易额。
+            </p>
+            <div id="exposureAnalysis" class="exposure-analysis"></div>
+          </div>
+        </section>
+
+        <section class="history-section" id="relationship-network">
+          <div class="section-heading">
+            <div>
+              <span class="section-index">03</span>
+              <h2>国内政治博弈：利益方社会关系网络</h2>
+            </div>
+          </div>
+          <div class="network-toolbar">
+            <div id="networkLayerTabs" class="network-layer-tabs"></div>
+            <div class="legend network-legend">
+              <span><i class="edge-swatch positive"></i>合作或依赖</span>
+              <span><i class="edge-swatch negative"></i>压力或冲突</span>
+              <span><i class="edge-swatch background"></i>低置信背景</span>
+            </div>
+          </div>
+          <div class="network-analysis-layout">
+            <div class="diagram-panel network-panel">
+              <div
+                id="relationshipNetwork"
+                class="relationship-network"
+                aria-label="国内政治博弈利益方社会关系网络"
+              ></div>
+            </div>
+            <aside id="networkSidePanel" class="network-side-panel" aria-live="polite"></aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>NICKEL HISTORY LAB · 历史现实复现</span>
+        <span>公开法规 · 公司披露 · 公开研究 · 既有研究结果</span>
+      </footer>
+    </div>
+
+    <script src="flags.js"></script>
+    <script src="international_nickel_shares.js"></script>
+    <script src="research_results.js"></script>
+    <script src="spatial.js"></script>
+    <script src="sna.js"></script>
+    <script src="history.js"></script>
+    <script>
+      const notifyHistoryHeight = () => {
+        window.parent.postMessage(
+          {
+            type: "nickel-history-height",
+            height: Math.ceil(document.documentElement.scrollHeight)
+          },
+          "*"
+        );
+      };
+      window.addEventListener("load", notifyHistoryHeight);
+      window.addEventListener("resize", notifyHistoryHeight);
+      new ResizeObserver(notifyHistoryHeight).observe(document.body);
+    </script>
+  </body>
+</html>
