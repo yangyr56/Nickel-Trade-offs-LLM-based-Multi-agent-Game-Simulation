@@ -2,7 +2,9 @@
 
 **A social-network, machine-learning, and empirical analysis of Indonesia's nickel policy and multi-actor strategic bargaining.**
 
-![Nickel Trade-off cover](assets/cover-nickel-tradeoff.png)
+<p align="center">
+  <img src="assets/cover-nickel-tradeoff-hero.jpg" alt="Nickel Trade-off - Indonesia's Quota Negotiation" width="100%">
+</p>
 
 [Live Demo](https://yangyr56.github.io/Nickel-Trade-offs-LLM-based-Multi-agent-Game-Simulation/) ·
 [Chinese README](README.zh-CN.md) ·
@@ -18,6 +20,12 @@ This project examines how structural pressure in the global nickel market is tra
 2. **Strategic negotiation simulation** - a two-round policy table where the central government and four stakeholder groups exchange proposals, conditions, and implementation commitments.
 
 The project is built for research communication, teaching, and competition demonstration. It is not a forecast of real policy outcomes or a ranking of national welfare.
+
+## Live Interface
+
+The screenshot below shows the deployed historical-evolution module:
+
+![Nickel Trade-off live interface](assets/cover-nickel-tradeoff.png)
 
 ## Live Demo
 
@@ -332,6 +340,7 @@ server-bundle.mjs
 |   |-- map and network data
 |   `-- style files
 |-- assets/
+|   |-- cover-nickel-tradeoff-hero.jpg
 |   `-- cover-nickel-tradeoff.png
 |-- docs/
 |   |-- background.md
