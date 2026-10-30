@@ -413,3 +413,4 @@ Released under the [MIT License](LICENSE).
 ## Disclaimer
 
 This is an independent research and educational prototype. It is not affiliated with the Government of Indonesia, MIND ID, Antam, the LME, any listed company, or any government agency. Nothing in this repository constitutes investment, legal, or policy advice.
+<img width="2279" height="1280" alt="7ded9fb28b0f33c5e726e174ec340535" src="https://github.com/user-attachments/assets/0731f4a3-7ae0-4dbf-b38b-2b44d46f190f" />
