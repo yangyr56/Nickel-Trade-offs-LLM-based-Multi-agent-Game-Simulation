@@ -1,0 +1,123 @@
+[
+  {
+    "source_id": "SRC-ERL-2025",
+    "title": "Urgent transition, urgent extraction? Global decarbonization, national governance, and local impacts in the Indonesian nickel industry",
+    "authors": "Håkon da Silva Hyldmo et al.",
+    "publication": "Environmental Research Letters 20 (2025), 054003; published 2025-04-04",
+    "url": "https://doi.org/10.1088/1748-9326/adc31c",
+    "document_url": "https://research-portal.uu.nl/ws/portalfiles/portal/262244806/Hyldmo_2025_Environ._Res._Lett._20_054003.pdf",
+    "method": "Multi-sited qualitative fieldwork: 88 semi-structured interviews and six focus groups in Sorowako, Morowali and Kolaka; field periods 2021-2023; purposive/stratified plus snowball recruitment; thematic analysis corroborated with observation, policy documents, grey literature and media.",
+    "scope": "Local communities and Indigenous peoples, civil society, mining/processing firms, local/regional/national political actors and policymakers.",
+    "limitations": "Qualitative and non-probability sampling; not a prevalence estimate. Findings span multiple sites; anonymous quotations must not be assigned to a specific village unless the paper says so. Respondent-attributed impacts are not independent epidemiological or causal measurements."
+  },
+  {
+    "source_id": "SRC-MOROWALI-LAND-2025",
+    "title": "Masyarakat Apresiasi Solusi Solutif: Bupati Morowali Pimpin Rapat Penyelesaian Lahan di Bahodopi",
+    "authors": "Pemerintah Kabupaten Morowali",
+    "publication": "Official county report, event and publication date 2025-09-09",
+    "url": "https://morowalikab.go.id/news/masyarakat-apresiasi-solusi-solutif-bupati-morowali-iksan-pimpin-rapat-penyelesaian-lahan-di-kecamatan-bahodopi",
+    "method": "Official meeting report; quotes a resident representative and lists nine claims discussed with company, village and county representatives.",
+    "scope": "Pulondongan and Lere’ea hamlets, Bahodopi; PT Abadi Nikel Nusantara.",
+    "limitations": "County-published account, not independent minutes or implementation audit; quoted representative is not a survey or authorization from all residents. Eight items reportedly agreed; one land-document issue remained pending."
+  },
+  {
+    "source_id": "SRC-MOROWALI-ADP-2025",
+    "title": "Pemkab Morowali Rapat Bersama PT ADP, Tindak Lanjuti Keluhan Masyarakat Soal Dampak Lingkungan",
+    "authors": "Pemerintah Kabupaten Morowali",
+    "publication": "Official county report, 2025-04-14",
+    "url": "https://morowalikab.go.id/news/pemkab-morowali-rapat-bersama-pt-adp-tindak-lanjuti-keluhan-masyarakat-soal-dampak-lingkungan",
+    "method": "County report of a meeting and signed agreement between county government and PT Alaska Dwipa Perdana.",
+    "scope": "Solonsa Jaya, Wita Ponda, Morowali; alleged muddy runoff affecting rice fields and public/social facilities.",
+    "limitations": "Government report of allegations and commitments; it does not independently establish environmental causation or verify that works and water-pipe repairs were completed."
+  },
+  {
+    "source_id": "SRC-MOROWALI-STRIKE-2024",
+    "title": "Pemkab Morowali Gelar Rakor Bersama Tindaklanjuti Aksi Mogok Kerja SP-KBM PT WNI",
+    "authors": "Pemerintah Kabupaten Morowali",
+    "publication": "Official county report, 2024-06-05",
+    "url": "https://morowalikab.go.id/news/pemkab-morowali-gelar-rakor-bersama-tindaklanjuti-aksi-mogok-kerja-sp-kbm-pt-wni",
+    "method": "County-reported coordination meeting after a three-day strike; records attendees, agreed points and unresolved requests.",
+    "scope": "SP-KBM and PT Wangxiang Nickel Industri, with county labor office, industrial-relations mediator and labor inspector.",
+    "limitations": "Official report, not the signed minutes or a later compliance check. An industrial labor dispute is an analogous negotiation case, not direct proof of nickel-quota bargaining rules."
+  },
+  {
+    "source_id": "SRC-MOROWALI-STUNTING-2024",
+    "title": "Morowali 2024 stunting audit dissemination and announced APBD allocation",
+    "authors": "Pemerintah Kabupaten Morowali",
+    "publication": "Official county report, 2024-10-14",
+    "url": "https://morowalikab.go.id/news/pj-sekda-abdul-wahid-hasan-resmi-buka-pertemuan-diseminasi-audit-kasus-stunting-kabupaten-morowali-tahun-2024",
+    "method": "County report of a local planning/evaluation meeting; official statement reports an APBD allocation of IDR 68,141,817,180 and a 2025 target.",
+    "scope": "District and village health actors and stunting coordination in Morowali.",
+    "limitations": "An announced allocation is not verified disbursement or expenditure; not a nickel-specific budget and not a measure of fiscal headroom for other programmes."
+  },
+  {
+    "source_id": "SRC-KSPI-SURVEY-2026",
+    "title": "Buruknya Wajah Hilirisasi Nikel: Survei Lintas Serikat Ungkap Carut Marut Kondisi Kerja di Morowali",
+    "authors": "Koalisi serikat pekerja; published by KPonline on 2026-08-18",
+    "publication": "2026-08-18",
+    "url": "https://www.koranperdjoeangan.com/buruknya-wajah-hilirisasi-nikel-survei-lintas-serikat-ungkap-carut-marut-kondisi-kerja-di-morowali/",
+    "method": "Coalition reports a random-sample survey of 1,078 nickel mining and processing workers; the public story gives summary counts.",
+    "scope": "Industrial workers in the Morowali nickel area; K3 risk, health access, wages, hours and basic rights.",
+    "limitations": "Union-coalition publication; sampling frame, questionnaire, response rate and microdata are not supplied on the page. Self-reported results are not an independent workplace audit; not evidence that training produced jobs or livelihood gains."
+  },
+  {
+    "source_id": "SRC-LOWY-2025",
+    "title": "Indonesia: The downstreaming dilemma",
+    "authors": "Hilman Palaon and Robert Walker, Lowy Institute",
+    "publication": "2025-01-20; field visits/interviews reported from 2024",
+    "url": "https://www.lowyinstitute.org/the-interpreter/indonesia-downstreaming-dilemma",
+    "method": "Expert commentary based on interviews with communities and stakeholders, with selected BPS labour-market statistics cited.",
+    "scope": "Southeast Sulawesi province, especially the nickel belt; traditional sectors, industrial jobs and local workforce composition.",
+    "limitations": "Not a peer-reviewed study; interview sampling is not specified on the page. Province-level claims must not be transferred directly to Morowali or read as a unified community preference."
+  },
+  {
+    "source_id": "SRC-SIKD-MOROWALI-2025",
+    "title": "Portal Data SIKD: APBD Kabupaten Morowali Tahun 2025",
+    "authors": "Direktorat Jenderal Perimbangan Keuangan, Kementerian Keuangan Republik Indonesia",
+    "publication": "2025 APBD; SIKD page states data received by 2026-10-28; accessed before case cutoff 2026-10-29",
+    "url": "https://djpk.kemenkeu.go.id/portal/data/apbd?pemda=06&periode=12&provinsi=19&tahun=2025",
+    "method": "Official APBD dashboard showing budget ceiling and realization through December 2025, as transmitted to SIKD by 2026-10-28.",
+    "scope": "Morowali district government revenue, transfers, expenditure and financing.",
+    "limitations": "One fiscal-year aggregate does not identify discretionary headroom or nickel-related service costs. Revenue and expenditure are financed by multiple sources including prior-year surplus; do not infer that local government has unlimited funds or no funds."
+  },
+  {
+    "source_id": "SRC-BAPPENAS-MOROWALI-FISCAL-2026",
+    "title": "Paradoks Morowali: Ketika Kabupaten Terkaya Indonesia Menghadapi Keterbatasan Kapasitas Fiskal",
+    "authors": "Muhyiddin, Achmanto Mendatu, Muhammad Dio Rhiza Amrizal, Irkham Syahrul Rozikin",
+    "publication": "Bappenas Working Papers 9(3), 191–205 (2026); indexed as published before 2026-10-29, exact online date not confirmed",
+    "url": "https://doi.org/10.47266/bwp.v9i3.607",
+    "method": "Working paper abstract reports longitudinal fiscal analysis for 2011–2025 combined with FGD and in-depth interviews; only abstract and bibliographic record were reviewed for this coding pass.",
+    "scope": "Morowali district fiscal capacity relative to rapid nickel-led regional GDP growth.",
+    "limitations": "Working paper interpretation, not a legal or audited project-level allocation analysis. Falling revenue/GDP ratios do not mean absolute revenue fell, and cannot establish the money available for any specific policy."
+  },
+  {
+    "source_id": "SRC-UGM-BAHODOPI-CONFLICT-2020",
+    "title": "Communal violence as a strategy for negotiation: Community responses to nickel mining industry in Central Sulawesi, Indonesia",
+    "authors": "Bambang Hudayana, Suharko, A. B. Widyanta",
+    "publication": "The Extractive Industries and Society 7(4), 1547–1556 (2020); DOI 10.1016/j.exis.2020.08.012",
+    "url": "https://ir.lib.ugm.ac.id/id/eprint/17664/",
+    "method": "Peer-reviewed qualitative case study; interviews with six village activists, five district government staff, three police staff and three company staff; focus groups with 12 participating citizens and 65 non-participants; fieldwork December 2018–April 2019.",
+    "scope": "Bahodopi, Morowali; community-company conflict and negotiation over nickel operations.",
+    "limitations": "Retrospective single-area qualitative study; does not identify preferences for the current policy menu or establish that conflict/compensation patterns represent all residents. Full paper access is restricted; this coding uses the repository abstract."
+  },
+  {
+    "source_id": "SRC-AP-KABAENA-2024",
+    "title": "Global demand spurring Indonesia’s mining boom comes at a cost for many communities",
+    "authors": "Yusuf Wahil and Victoria Milko, Associated Press",
+    "publication": "Associated Press, 2024-12-17; reporting and interviews from Kabaena, Southeast Sulawesi in November 2024",
+    "url": "https://apnews.com/article/indonesia-nickel-stainless-steel-energy-transition-evs-c7f9e28b3a59f0113e1f96cd9b154067",
+    "method": "On-the-ground news reporting with named/identified fishers, farmers and residents; reports testing conducted by Satya Bumi and reviewed by an academic expert.",
+    "scope": "Kabaena Island, Southeast Sulawesi; Indigenous Bajau, fishing and farming livelihoods near nickel activity.",
+    "limitations": "Journalistic reporting from a distinct island case, not Morowali or a representative survey. Resident statements and NGO sample results require separate verification; do not treat as a universal community stance or direct proof about quota changes."
+  },
+  {
+    "source_id": "SRC-IMVO-MOROWALI-LANDSCAPE-2025",
+    "title": "Nickel Mining-Related Sustainability Impact at Landscape-level in Morowali, Indonesia",
+    "authors": "Study commissioned by IUCN NL for members of the Netherlands Renewable Energy Covenant",
+    "publication": "Final report, 2025-06",
+    "url": "https://www.imvoconvenanten.nl/-/media/imvo/files/hernieuwbare-energie/morowali-report.pdf",
+    "method": "Review of publicly available spatial data and industry expertise covering concessions, smelters, land disturbance, ecosystems, community land overlap and risk management.",
+    "scope": "Landscape-level nickel mining and smelting risks in Morowali, Central Sulawesi.",
+    "limitations": "Commissioned landscape assessment, not a household survey or independent causal evaluation of every mine. Spatial overlap signals potential rights and livelihood risk, not proof of each household’s loss or a specific policy effect."
+  }
+]

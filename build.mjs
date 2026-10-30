@@ -16,3 +16,4 @@ await writeFile(path.join(root,'dist/server/index.js'),generated);
 
 console.log('Worker built with embedded assets and source-linked knowledge; no credentials included.');
 
+

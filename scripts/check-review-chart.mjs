@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import vm from 'node:vm';
+const b={window:{}};for(const f of ['data.js','engine.js','review-chart.js'])vm.runInNewContext(await readFile('public/'+f,'utf8'),b);
+const E=b.NickelEngine||b.window.NickelEngine,D=b.window.NICKEL_DATA,V=b.window.NickelReview;
+const q={version:1,sourceMode:'deepseek',selection:{P02:'C',P04:'B',P05:'B',P11:'B'},scenario:D.scenario,stance_evaluations:{MINER:E.attitude([1],[1]),PROCESSOR:E.attitude([1],[null])},offers:{MINER:{P02:null},PROCESSOR:true},ai:{MINER:{stance:'support',requests:[]},PROCESSOR:{stance:'unclear'},LOCAL:{missing:true}},analysis:{responses:{MINER:{speech:'我支持方向，但任务仍需确认。'}}}};
+const a=V.summary(q,'MINER',E,D.menu);assert.equal(a.key,'support');assert.equal(a.tasks[0].status,'待明确合作');
+assert.equal(V.summary(q,'LOCAL',E,D.menu).key,'absent');assert.equal(V.summary(q,'COMMUNITY',E,D.menu).key,'absent');
+assert.equal(V.summary(null,'MINER',E,D.menu).label,'本轮尚未进行');
+assert.equal(V.summary({...q,sourceMode:'rule'},'MINER',E,D.menu).key,'support');
+assert.equal(V.summary(q,'PROCESSOR',E,D.menu).key,'unclear');
+assert.equal(V.summary({...q,stance_evaluations:null,ai:{MINER:{stance:'conditional'}}},'MINER',E,D.menu).key,'absent');
+console.log('PASS support never establishes cooperation; missing and legacy records remain distinct; rules calculate stance without fabricating AI replies');

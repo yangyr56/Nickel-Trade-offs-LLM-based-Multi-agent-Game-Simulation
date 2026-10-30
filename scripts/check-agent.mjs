@@ -1,0 +1,43 @@
+import assert from 'node:assert/strict';
+import {readFile,writeFile} from 'node:fs/promises';
+const src=await readFile('dist/server/index.js','utf8');
+const {default:worker}=await import('data:text/javascript;base64,'+Buffer.from(src).toString('base64'));
+const realFetch=globalThis.fetch;
+const env={DEEPSEEK_API_KEY:'test-only-placeholder',DEEPSEEK_MODEL:'deepseek-flash',AI_ALLOWED_EMAIL:'owner@example.test'};
+const base={actor:'MINER',version:1,selection:{P02:'C',P04:'B',P05:'C',P11:'C'},route:'G3',policy_version:'policy-quota-v3',capacityMode:'standard',history:[],reason:''};
+const headers={'content-type':'application/json',origin:'https://lab.example.test','oai-authenticated-user-id':'owner-test','oai-authenticated-user-email':'owner@example.test'};
+const request=(b,h=headers)=>new Request('https://lab.example.test/api/negotiate',{method:'POST',headers:{...h,...(h['oai-authenticated-user-id']?{'oai-authenticated-user-id':'owner-test:'+(b.reason||'base')}:{})},body:JSON.stringify(b)});
+let count=0,change=()=>{};
+globalThis.fetch=async(url,opts)=>{
+ assert.equal(url,'https://api.deepseek.com/chat/completions');
+ const body=JSON.parse(opts.body),ctx=JSON.parse(body.messages[1].content);count++;
+ assert.equal(body.messages[2].role,'user');assert.deepEqual(JSON.parse(body.messages[2].content).constant_fields.current_selection,ctx.current_draft_reminder.selection);
+ const o={actor:ctx.actor,current_selection:ctx.current_draft_reminder.selection,speech:'我希望政府给企业留出准备时间，并把培训任务和投入安排说明白。',stance:ctx.stance_evaluation.stance,strategy:'用分期投入争取支持',requests:[{policy_id:'P04',option_id:'C',reason:'希望政府配套支持'}],commitments:ctx.tasks.map(t=>({policy_id:t.policy_id,decision:'accept',conditions:t.policy_id==='P05'?[{policy_id:'P04',option_id:'C'}]:[],reason:'按条件参与任务'})),evidence_ids:[ctx.references[0]?.id||'CTX1'],uncertainty:'支持条件需明确',impacts:ctx.role.criteria.map(c=>c.impact)};
+ change(o);
+ return Response.json({model:'mock-only',choices:[{finish_reason:'stop',message:{content:JSON.stringify(o)}}],usage:{total_tokens:1}});
+};
+const checks=[];
+try{
+ const noAuth=await worker.fetch(request(base,{'content-type':'application/json',origin:'https://lab.example.test'}),env);assert.equal(noAuth.status,401);assert.equal(count,0);checks.push('anonymous requests cannot spend API credits');
+ const badOrigin=await worker.fetch(request(base,{...headers,origin:'https://evil.example.test'}),env);assert.equal(badOrigin.status,403);assert.equal(count,0);checks.push('cross-origin requests rejected before provider call');
+ const ok=await worker.fetch(request(base),env),data=await ok.json();assert.equal(ok.status,200);assert.equal(data.offers.P02,true);assert.equal(data.offers.P05,null);checks.push('unmet model conditions stay pending rather than consent');
+ const cached=await worker.fetch(request(base),env);assert.equal((await cached.json()).cached,true);assert.equal(count,1);checks.push('identical request reuses short-lived per-user response');
+ change=o=>o.stance=o.stance==='support'?'oppose':'support';assert.equal((await worker.fetch(request({...base,reason:'changed stance'}),env)).status,502);checks.push('AI cannot replace rule-calculated stance');
+ change=o=>o.evidence_ids=['INVENTED'];const bad=await worker.fetch(request({...base,reason:'reference case'}),env);assert.equal(bad.status,502);checks.push('invented source IDs cannot enter the round');
+ change=o=>o.commitments=[];assert.equal((await worker.fetch(request({...base,reason:'missing task'}),env)).status,502);checks.push('missing tasks rejected rather than silently accepted');
+ change=o=>o.impacts=[9,9,9,9];assert.equal((await worker.fetch(request({...base,reason:'changed indicators'}),env)).status,502);checks.push('model cannot replace rule-given impacts');
+ change=o=>o.current_selection.P05='B';assert.equal((await worker.fetch(request({...base,reason:'old snapshot'}),env)).status,502);checks.push('previous-version readback rejected');
+ let repairs=0;change=o=>{if(repairs++===0)o.current_selection.P05='B';};const repaired=await(await worker.fetch(request({...base,reason:'repair once'}),env)).json();assert.equal(repaired.current_selection.P05,'C');assert.equal(repaired.generation_attempts.length,2);assert.equal(repaired.generation_attempts[0].status,'rejected');assert.equal(repaired.generation_attempts[1].status,'passed');checks.push('wrong readback gets one genuine model correction, never overwritten');
+ change=o=>{o.current_selection={P02:'p02-c',P04:' b ',P05:'Ｃ',P11:{selected:'C'}};};const formatted=await(await worker.fetch(request({...base,reason:'equivalent formatting'}),env)).json();assert.equal(formatted.current_selection.P02,'C');assert.equal(formatted.generation_attempts.length,1);checks.push('equivalent casing, fullwidth and explicit selected values accepted');
+ change=o=>{delete o.current_selection;};const missing=await worker.fetch(request({...base,reason:'no readback'}),env);assert.equal(missing.status,502);checks.push('missing readback remains rejected after bounded repair');
+ change=o=>o.speech='我的工厂停炉后需要两三个月复产';assert.equal((await worker.fetch(request({...base,reason:'unsupported quantity'}),env)).status,502);checks.push('extra quantitative claims rejected');
+ change=o=>{o.commitments[0].reason='我愿意承担，但需明确经费来源';};const ambiguous=await(await worker.fetch(request({...base,reason:'unresolved prose condition'}),env)).json();assert.equal(ambiguous.offers.P02,null);checks.push('unresolved conditions in acceptance reason stay pending');
+ const index=await worker.fetch(new Request('https://lab.example.test/'),{});assert.equal(index.status,200);assert.ok(!(await index.text()).includes(env.DEEPSEEK_API_KEY));checks.push('public UI contains no server key');
+ const engine=globalThis.NickelEngine;
+ const dataset={window:{}};
+ const vm=await import('node:vm');vm.runInNewContext(await readFile('public/data.js','utf8'),dataset);
+ const D=dataset.window.NICKEL_DATA;
+ const c=engine.inspect(base.selection,D.menu,D.scenario,{MINER:{P02:true,P05:false},PROCESSOR:true,LOCAL:true,COMMUNITY:true});assert.equal(c.ready.P02,'具备模拟条件');assert.equal(c.ready.P05,'受阻');checks.push('one actor may accept production task and refuse training separately');
+ console.log(checks.map(x=>'PASS '+x).join('\n'));
+ await writeFile('knowledge/接口核验记录.json',JSON.stringify({date:'2026-10-29',kind:'mock-provider checks only, not live model verification',checks},null,2));
+}finally{globalThis.fetch=realFetch;}

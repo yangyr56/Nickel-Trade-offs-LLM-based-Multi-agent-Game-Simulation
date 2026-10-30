@@ -16,16 +16,16 @@
       "unclear": 26
     },
     "LOCAL": {
-      "support": 25,
+      "support": 15,
       "oppose": 0,
-      "balanced": 11,
-      "unclear": 16
+      "balanced": 4,
+      "unclear": 33
     },
     "COMMUNITY": {
-      "support": 38,
+      "support": 9,
       "oppose": 0,
-      "balanced": 6,
-      "unclear": 8
+      "balanced": 2,
+      "unclear": 41
     }
   },
   "issues": [

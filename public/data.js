@@ -21,7 +21,12 @@ window.NICKEL_DATA = {
             "N001",
             "N002",
             "B024",
-            "B034"
+            "B034",
+            "LC15",
+            "LC16",
+            "LC17",
+            "LC18",
+            "LC19"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
@@ -43,6 +48,18 @@ window.NICKEL_DATA = {
               -1,
               null,
               -1,
+              0
+            ],
+            "LOCAL": [
+              null,
+              null,
+              0,
+              0
+            ],
+            "COMMUNITY": [
+              0,
+              null,
+              0,
               0
             ]
           },
@@ -67,14 +84,25 @@ window.NICKEL_DATA = {
             "N001",
             "N002",
             "B024",
-            "B034"
+            "B034",
+            "LC01",
+            "LC03",
+            "LC05",
+            "LC06",
+            "LC07",
+            "LC15",
+            "LC16",
+            "LC17",
+            "LC18",
+            "LC19"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
           "unknown": "实际配额量、价格、净收益、财政审批与长期成效仍需独立核验",
           "timing": "较快启动额外收紧，三个月后检查供矿与经营情况。",
           "implementation_gate": "企业明确配合调整；实际配额仍需相应审批和复评。",
-          "design_rationale": "较快开始控制开采，但矿企可采售矿量受限，冶炼企业需要重排供矿和生产。没有准备期，合同与开工衔接压力更大；净利润变化仍需判断。"
+          "design_rationale": "较快开始控制开采，但矿企可采售矿量受限，冶炼企业需要重排供矿和生产。没有准备期，合同与开工衔接压力更大；净利润变化仍需判断。",
+          "impact_note": "配额调整可能沿供矿、就业及地方收入传导，但现有资料不能确认调整幅度、企业用工反应和地方财政传导；地方就业/可用资源与社区生计影响暂记未知。分阶段安排也不预设损失或补偿已经发生。D情景方向；待本地就业与预算资料校准。依据N001、N002、B024、B034、LC01、LC03。"
         },
         "C": {
           "text": "先给六个月准备期，再分阶段收紧",
@@ -89,6 +117,18 @@ window.NICKEL_DATA = {
               0,
               null,
               1,
+              0
+            ],
+            "LOCAL": [
+              null,
+              null,
+              0,
+              0
+            ],
+            "COMMUNITY": [
+              0,
+              null,
+              0,
               0
             ]
           },
@@ -114,14 +154,25 @@ window.NICKEL_DATA = {
             "N001",
             "N002",
             "B024",
-            "B034"
+            "B034",
+            "LC01",
+            "LC03",
+            "LC05",
+            "LC06",
+            "LC07",
+            "LC15",
+            "LC16",
+            "LC17",
+            "LC18",
+            "LC19"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
           "unknown": "实际配额量、价格、净收益、财政审批与长期成效仍需独立核验",
           "timing": "先准备六个月，再分步实施和复评；资源控制的启动晚于立即收紧。",
           "implementation_gate": "核对与协调投入、企业调整合作均须明确；不得把准备期当作已经完成收紧。",
-          "design_rationale": "先核对供矿、合同和生产衔接，让企业有时间调整；但收紧生效更晚，还会占用中央核对与协调资源。准备期不等于取消后续约束。"
+          "design_rationale": "先核对供矿、合同和生产衔接，让企业有时间调整；但收紧生效更晚，还会占用中央核对与协调资源。准备期不等于取消后续约束。",
+          "impact_note": "配额调整可能沿供矿、就业及地方收入传导，但现有资料不能确认调整幅度、企业用工反应和地方财政传导；地方就业/可用资源与社区生计影响暂记未知。分阶段安排也不预设损失或补偿已经发生。D情景方向；待本地就业与预算资料校准。依据N001、N002、B024、B034、LC01、LC03。"
         }
       },
       "driver": "quota-policy"
@@ -145,7 +196,9 @@ window.NICKEL_DATA = {
           "rule_id": "P04_B_V2",
           "evidence": [
             "N010",
-            "N017"
+            "N017",
+            "LC15",
+            "LC16"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
@@ -188,7 +241,9 @@ window.NICKEL_DATA = {
           "rule_id": "P04_A_V2",
           "evidence": [
             "N010",
-            "N017"
+            "N017",
+            "LC15",
+            "LC16"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
@@ -233,7 +288,9 @@ window.NICKEL_DATA = {
           "rule_id": "P04_C_V2",
           "evidence": [
             "N010",
-            "N017"
+            "N017",
+            "LC15",
+            "LC16"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
@@ -338,7 +395,9 @@ window.NICKEL_DATA = {
           "unknown": "实际配额量、价格、净收益、财政审批与长期成效仍需独立核验",
           "timing": "先围绕既有岗位启动培训，复评就业对接；不保证每位参与者获得岗位。",
           "implementation_gate": "企业培训投入与地方对接合作明确，实际岗位结果另行核对。",
-          "design_rationale": "围绕现有岗位开展培训，企业承担经费，地方组织就业对接；准备较简单、中央不用新增配套，但企业和地方要承担成本，对产业链深度的改变有限。"
+          "design_rationale": "围绕现有岗位开展培训，企业承担经费，地方组织就业对接；准备较简单、中央不用新增配套，但企业和地方要承担成本，对产业链深度的改变有限。",
+          "impact_note": "用户确认的D级模拟设定：岗位培训可提高参与者获得相关工作的机会并改善其生计；此为模型机制假设，不是本项目的实测结果，也不表示所有居民受益。地方对接仍需投入模拟资源；不把培训完成、岗位进入或工资兑现说成已发生。此项不以新增文献作为效果证明。",
+          "impact_basis": "用户确认的D级情景假设；非经验测量"
         },
         "C": {
           "text": "共建技能与本地供应商试点，分阶段验收",
@@ -356,15 +415,15 @@ window.NICKEL_DATA = {
               1
             ],
             "LOCAL": [
-              null,
+              1,
               0,
               -1,
               0
             ],
             "COMMUNITY": [
               0,
-              null,
               1,
+              0,
               0
             ]
           },
@@ -398,7 +457,9 @@ window.NICKEL_DATA = {
           "unknown": "实际配额量、价格、净收益、财政审批与长期成效仍需独立核验",
           "timing": "先确定岗位、供应商申请条件与投入分工，再分阶段检查培训和采购对接。",
           "implementation_gate": "政企和地方投入齐备；采购资格及实际订单单独核验，不保证订单数量。",
-          "design_rationale": "政企共同建设技能培训、供应商辅导和采购资格核验，争取把更多配套能力留在本地；项目范围更广，需要更多企业投入与协调时间，近期岗位和采购增量仍不确定。"
+          "design_rationale": "政企共同建设技能培训、供应商辅导和采购资格核验，争取把更多配套能力留在本地；项目范围更广，需要更多企业投入与协调时间，近期岗位和采购增量仍不确定。",
+          "impact_note": "用户确认的D级模拟设定：岗位培训可提高参与者获得相关工作的机会并改善其生计；此为模型机制假设，不是本项目的实测结果，也不表示所有居民受益。本地供应商试点额外订单、岗位数量及分配仍未确认。地方对接仍需投入模拟资源；不把培训完成、岗位进入或工资兑现说成已发生。此项不以新增文献作为效果证明。",
+          "impact_basis": "用户确认的D级情景假设；非经验测量"
         }
       },
       "driver": "policy-tool"
@@ -424,7 +485,14 @@ window.NICKEL_DATA = {
             "O03",
             "O04",
             "N016",
-            "N006"
+            "N006",
+            "LC09",
+            "LC10",
+            "LC14",
+            "LC15",
+            "LC17",
+            "LC18",
+            "LC19"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
@@ -443,9 +511,9 @@ window.NICKEL_DATA = {
               1
             ],
             "COMMUNITY": [
-              1,
+              null,
               0,
-              1,
+              0,
               0
             ]
           },
@@ -471,14 +539,24 @@ window.NICKEL_DATA = {
             "O03",
             "O04",
             "N016",
-            "N006"
+            "N006",
+            "LC01",
+            "LC02",
+            "LC09",
+            "LC10",
+            "LC14",
+            "LC15",
+            "LC17",
+            "LC18",
+            "LC19"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
           "unknown": "实际配额量、价格、净收益、财政审批与长期成效仍需独立核验",
           "timing": "先保障现有基本服务，一年内持续回应和检查；不承诺扩展覆盖范围。",
           "implementation_gate": "地方运营投入及居民反馈参与明确；仍需确认持续运营经费。",
-          "design_rationale": "先围绕现有供水及基本服务维护开展一年保障安排，公开回应居民问题。中央投入较少，地方需要承担更多统筹和运营，暂不承诺扩大服务范围。"
+          "design_rationale": "先围绕现有供水及基本服务维护开展一年保障安排，公开回应居民问题。中央投入较少，地方需要承担更多统筹和运营，暂不承诺扩大服务范围。",
+          "impact_note": "条款提出维持基本服务并由地方统筹、中央补缺；现有资料不足以确认具体服务、覆盖对象和实际运行效果，社区健康与服务影响暂记未知。该版本没有居民监督条款，不预设新增参与收益。依据 O03、O04、N006、N012、N016。 SIKD年度总预算仅提供背景，不能测量该服务条款的地方负担；本条投入仍是D级模拟单位。"
         },
         "C": {
           "text": "开展一年综合服务试点，中央配套、居民监督",
@@ -502,7 +580,7 @@ window.NICKEL_DATA = {
               1
             ],
             "COMMUNITY": [
-              1,
+              null,
               0,
               1,
               0
@@ -530,14 +608,24 @@ window.NICKEL_DATA = {
             "O03",
             "O04",
             "N016",
-            "N006"
+            "N006",
+            "LC01",
+            "LC02",
+            "LC09",
+            "LC10",
+            "LC14",
+            "LC15",
+            "LC17",
+            "LC18",
+            "LC19"
           ],
           "status": "D：政策工具为研究情景；数值与时限非经验估计",
           "real_legal_gate": null,
           "unknown": "实际配额量、价格、净收益、财政审批与长期成效仍需独立核验",
           "timing": "一年试点，季度公开回应；具体扩展范围和长期运营仍须复评。",
           "implementation_gate": "中央配套、地方运营和居民参与均明确；参与监督不包含同意搬迁。",
-          "design_rationale": "将服务改善、地方运营和居民监督一并组织，定期公开回应，并讨论更广的服务衔接。中央承担更多配套，地方初期负担较轻，但会占用其他政策的投入空间。"
+          "design_rationale": "将服务改善、地方运营和居民监督一并组织，定期公开回应，并讨论更广的服务衔接。中央承担更多配套，地方初期负担较轻，但会占用其他政策的投入空间。",
+          "impact_note": "方案明确提出一年服务试点、中央配套与居民监督，因此只把参与渠道作为设计层面的正向安排；服务对健康的实际影响仍未知。提出试点不等于经费到账、服务运行或所有居民同意。依据 O03、O04、N006、N012、N016。 SIKD年度总预算仅提供背景，不能测量该服务条款的地方负担；本条投入仍是D级模拟单位。"
         }
       },
       "driver": "policy-tool"
@@ -1351,7 +1439,68 @@ window.NICKEL_DATA = {
       "title": "企业回应：服务与环境安排",
       "note": "Harita 2026-08-03企业声明（N012）。设施、运营和居民认可需分别验证，不能当独立监测结论。",
       "url": "https://tbpnickel.com/en/harita-nickels-latest-information-on-several-issues-in-kawasi-village-obi-island"
+    },
+    {
+      "title": "多点定性研究：地方权限、社区影响与不同生计",
+      "note": "2025年同行评审论文，以Morowali等地88次访谈和6场焦点小组研究地方权限、社区生计与参与。质性、非概率样本；不能推算普遍比例或某一菜单方案的效果。",
+      "url": "https://doi.org/10.1088/1748-9326/adc31c"
+    },
+    {
+      "title": "Bahodopi居民协商：八项达成、一项待续",
+      "note": "莫罗瓦利县2025-09-09会议报道列出9项土地、环境、服务诉求，县方称8项达成、土地文件仍待处理；报道未核实后续履行。",
+      "url": "https://morowalikab.go.id/news/masyarakat-apresiasi-solusi-solutif-bupati-morowali-iksan-pimpin-rapat-penyelesaian-lahan-di-kecamatan-bahodopi"
+    },
+    {
+      "title": "Solonsa Jaya环境投诉与供水修复安排",
+      "note": "县政府2025-04-14报道居民投诉稻田/设施受泥水影响，企业签署沉淀池、河道、学校防护与受影响水管修复安排；不等于已完成。",
+      "url": "https://morowalikab.go.id/news/pemkab-morowali-rapat-bersama-pt-adp-tindak-lanjuti-keluhan-masyarakat-soal-dampak-lingkungan"
+    },
+    {
+      "title": "劳资调解：部分让步与未解决诉求并存",
+      "note": "县政府2024-06-05对三日罢工后的会议作出报道：复职两名员工后工会停工，工资与安全问题仍交后续部门；仅作为谈判流程类比。",
+      "url": "https://morowalikab.go.id/news/pemkab-morowali-gelar-rakor-bersama-tindaklanjuti-aksi-mogok-kerja-sp-kbm-pt-wni"
+    },
+    {
+      "title": "工会调查：矿区工人的安全、健康和工资体验",
+      "note": "工会联合组织2026年对1,078名工人开展随机样本调查（按组织自述）；问卷和微观数据未公开，作为群体差异线索，不作为独立审计或培训效果证据。",
+      "url": "https://www.koranperdjoeangan.com/buruknya-wajah-hilirisasi-nikel-survei-lintas-serikat-ungkap-carut-marut-kondisi-kerja-di-morowali/"
+    },
+    {
+      "title": "地方公共服务预算与结果核查",
+      "note": "县政府2024年报告披露用于降低发育迟缓的APBD安排为68,141,817,180印尼盾。是公告的预算安排，不是实际支出，也不是镍业专项。",
+      "url": "https://morowalikab.go.id/news/pj-sekda-abdul-wahid-hasan-resmi-buka-pertemuan-diseminasi-audit-kasus-stunting-kabupaten-morowali-tahun-2024"
+    },
+    {
+      "title": "东南苏拉威西的工业就业与传统生计",
+      "note": "Lowy Institute作者根据2024年访谈及所引统计讨论省级就业结构；样本未详，不能直接外推Morowali或当作统一社区偏好。",
+      "url": "https://www.lowyinstitute.org/the-interpreter/indonesia-downstreaming-dilemma"
+    },
+    {
+      "title": "地方政府预算：2025年收入与支出实现",
+      "note": "印尼财政部SIKD页面载明Morowali 2025年收入实现2.762万亿盾、支出实现2.771万亿盾，数据于2026-10-28接收。总量不能说明某项镍区服务的可用余额或预算权限。",
+      "url": "https://djpk.kemenkeu.go.id/portal/data/apbd?pemda=06&periode=12&provinsi=19&tahun=2025"
+    },
+    {
+      "title": "财政能力：工业增长与地方财政汲取",
+      "note": "Bappenas Working Papers 2026年论文摘要把Morowali 2011—2025年地方财政/GDP比率下降解释为收入滞后、支出滞后及地方能力差距。仅核读摘要；确切上线日期与完整数据分析尚待复核。",
+      "url": "https://doi.org/10.47266/bwp.v9i3.607"
+    },
+    {
+      "title": "Bahodopi社区冲突如何进入谈判",
+      "note": "同行评审研究基于地方行动者、政府、警察、企业访谈和两组焦点小组，分析土地/环境冲突与协商性补偿。单地历史研究，不能代表当前全国社区偏好。",
+      "url": "https://ir.lib.ugm.ac.id/id/eprint/17664/"
+    },
+    {
+      "title": "不同生计群体的现场声音：Kabaena渔民与农户",
+      "note": "美联社2024年现场报道引用渔民、农户与Bajau居民关于水域和生计的表达。地点为Kabaena，不代表Morowali或全国；报告中的NGO检测和学者解释与居民表达分开理解。",
+      "url": "https://apnews.com/article/indonesia-nickel-stainless-steel-energy-transition-evs-c7f9e28b3a59f0113e1f96cd9b154067"
+    },
+    {
+      "title": "Morowali土地、渔业与申诉机制景观评估",
+      "note": "2025年委托型报告综合公开空间数据与行业资料，识别潜在社区土地重叠、沿海生态和申诉机制风险；不是逐户损失调查或政策因果评估。",
+      "url": "https://www.imvoconvenanten.nl/-/media/imvo/files/hernieuwbare-energie/morowali-report.pdf"
     }
   ],
-  "policy_version": "policy-quota-v2"
+  "policy_version": "policy-quota-v3",
+  "knowledge_version": "KB-20261030-3"
 };
