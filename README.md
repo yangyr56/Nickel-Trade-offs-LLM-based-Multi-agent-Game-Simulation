@@ -2,6 +2,8 @@
 
 **A social-network, machine-learning, and empirical analysis of Indonesia's nickel policy and multi-actor strategic bargaining.**
 
+![Nickel Trade-off cover](assets/cover-nickel-tradeoff.png)
+
 [Live Demo](https://yangyr56.github.io/Nickel-Trade-offs-LLM-based-Multi-agent-Game-Simulation/) ·
 [Chinese README](README.zh-CN.md) ·
 [Pages Workflow](https://github.com/yangyr56/Nickel-Trade-offs-LLM-based-Multi-agent-Game-Simulation/actions/workflows/pages.yml)
@@ -25,6 +27,31 @@ https://yangyr56.github.io/Nickel-Trade-offs-LLM-based-Multi-agent-Game-Simulati
 The GitHub Pages version supports the historical evidence modules and the rule-based negotiation mode.
 
 The optional DeepSeek-powered multi-agent mode requires a Node.js server and secure server-side API credentials. It is not available on GitHub Pages alone.
+
+## Classroom Format
+
+Nickel Trade-off can be run as a digital exercise or a facilitated classroom simulation.
+
+### Stakeholder seats
+
+- **Mining companies:** protect output, contracts, and investment recovery while requesting a transition period.
+- **Smelters and downstream industries:** maintain ore supply and utilization of existing processing capacity.
+- **Local governments:** protect fiscal revenue, employment, public services, and transition resources.
+- **Affected communities:** protect employment, environmental quality, health, land, and participation channels.
+- **Central coordinator / facilitator:** propose policy packages, mediate trade-offs, and verify implementation conditions.
+
+### Negotiation agenda
+
+1. Magnitude and pace of the nickel RKAB quota reduction
+2. Allocation of transition costs
+3. Training and public-service support for industrial transformation
+
+### Recommended rules
+
+- Classroom format: three negotiation rounds plus a final resolution vote
+- Digital demo: a two-round negotiation followed by the central coordinator's decision
+- A valid resolution must be acceptable to most actors and pass legal, resource, and cooperation checks
+- If no agreement is reached, the government may impose a unilateral quota plan with distributional consequences
 
 ## Core Modules
 
@@ -251,6 +278,24 @@ Deployment flow:
 
 GitHub Pages serves only the frontend. The optional LLM API requires a separate Node-compatible hosting environment.
 
+## Teaching Materials
+
+| File | Purpose |
+|---|---|
+| [`docs/background.md`](docs/background.md) | Full historical and policy background |
+| [`docs/role-briefs.md`](docs/role-briefs.md) | Complete briefs for the central coordinator and four stakeholder groups |
+| [`docs/theory-guide.md`](docs/theory-guide.md) | Neoclassical-realism teaching guide and assessment rubric |
+| [`docs/agenda-template.md`](docs/agenda-template.md) | Negotiation records and final resolution template |
+| [`src/simulation-script.md`](src/simulation-script.md) | 90-100 minute classroom facilitation script |
+
+Suggested classroom flow:
+
+1. Read the background briefing.
+2. Assign the four stakeholder groups and one facilitator.
+3. Distribute role briefs and the resolution template.
+4. Run three negotiation rounds and a final vote.
+5. Use the debrief questions in the theory guide.
+
 ## Build
 
 Rebuild the server bundle:
@@ -286,6 +331,15 @@ server-bundle.mjs
 |   |-- briefing.html assets
 |   |-- map and network data
 |   `-- style files
+|-- assets/
+|   `-- cover-nickel-tradeoff.png
+|-- docs/
+|   |-- background.md
+|   |-- role-briefs.md
+|   |-- theory-guide.md
+|   `-- agenda-template.md
+|-- src/
+|   `-- simulation-script.md
 |-- knowledge/
 |   |-- observations.json
 |   `-- evidence and coding notes
@@ -298,6 +352,7 @@ server-bundle.mjs
 |-- .github/workflows/pages.yml
 |-- build.mjs
 |-- server.mjs
+|-- LICENSE
 `-- server-bundle.mjs
 ```
 
@@ -341,6 +396,10 @@ node scripts/check-followup.mjs
 The Chinese version is available at:
 
 - [README.zh-CN.md](README.zh-CN.md)
+
+## License
+
+Released under the [MIT License](LICENSE).
 
 ## Disclaimer
 
