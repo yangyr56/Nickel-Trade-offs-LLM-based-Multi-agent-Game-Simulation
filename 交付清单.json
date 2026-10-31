@@ -1,113 +1,53 @@
 [
   {
     "file": ".dockerignore",
-    "sha256": "2f9e68c03b094584d0030c3a6de6488bc8a88f1dc2e39a858511050c46e07f87",
-    "bytes": 26
+    "sha256": "6ea5f1ec0e19383c4200047fe405ed73efdbb970a7f6fd2dc414c95c284a0e76",
+    "bytes": 23
   },
   {
     "file": ".env.example",
-    "sha256": "2b093e06bc0d0616c57878e2e902c373d69ad41f6f9c83923473219176a26dfe",
-    "bytes": 231
+    "sha256": "e7552897263491cbdbb301f6a94dbb46b35f27042e9a65464e28efb67ca43a99",
+    "bytes": 316
+  },
+  {
+    "file": ".gitattributes",
+    "sha256": "2e99cea72f94820c128c1b014b26973cffd2f9256c50d05e6f83affb81234709",
+    "bytes": 37
+  },
+  {
+    "file": ".github/workflows/pages.yml",
+    "sha256": "e310adcc53d0d061a6703046e5890aa8fa6445d787b82bed0a2d8c1afe77b1a5",
+    "bytes": 758
   },
   {
     "file": ".gitignore",
-    "sha256": "f8e7f35a4fd3ba4ee19212b17eaba834ed096eb28e92a6ad490253d437e29aa4",
-    "bytes": 21
-  },
-  {
-    "file": "本版更新说明.md",
-    "sha256": "e7fd4a874fe6b4e1aa5c9b44c42111fbd31c5bf4a785ecf3b797e7fb9bb6a169",
-    "bytes": 639
-  },
-  {
-    "file": "补充来源登记_V1.3.json",
-    "sha256": "3910e41d775bacd8045b275889569ffc1c759a78e9c52d440183699a82bde696",
-    "bytes": 11582
-  },
-  {
-    "file": "当前政策与五方规则.md",
-    "sha256": "f773888185c273e717e4636e4712d538938912ccac0194868619ef0ea0444c74",
-    "bytes": 4125
-  },
-  {
-    "file": "地方与社区补证及规则转译_V1.3.md",
-    "sha256": "71a2a37e38587309380417ab2c94a7af5be3a8c1de5f4292b83fd80ea0be60e2",
-    "bytes": 7448
-  },
-  {
-    "file": "交给国内AI的任务说明.md",
-    "sha256": "f548502b1bbe9282cd4bb51e25bbaddaed16fd99f46dbd96181ece9ba8dff2b8",
-    "bytes": 2881
-  },
-  {
-    "file": "AI接入说明.md",
-    "sha256": "b6aeabd93a09ce7163900505037380e671de0348686c666ca1880cc385c34972",
-    "bytes": 4118
-  },
-  {
-    "file": "build.mjs",
-    "sha256": "7cff2c1dd6d2c48f12c95589d81e68da15844c59800a99ef09b491485ebeec59",
-    "bytes": 1198
+    "sha256": "8c137c28373e44b807b21ab0170812b0cfc9928d866b8a28660ab5ea7b17b4c9",
+    "bytes": 25
   },
   {
     "file": "Dockerfile",
-    "sha256": "21a4d0e29ba4e09e4004686fdd1c2891e96110dc7fdddbaca1279fd0839bc838",
-    "bytes": 124
-  },
-  {
-    "file": "package.json",
-    "sha256": "6b3d2285526e7fdde411663f160695a026a0cc3c2cc1ccb1cc5d825ba23d7932",
-    "bytes": 230
+    "sha256": "8b9c737aa524d3827052866770f301b188900112b82a099ea87fd594652fb9cb",
+    "bytes": 117
   },
   {
     "file": "README.md",
-    "sha256": "6c92841be81033a9c6abf01d794dc723ce0f0b388504186932aab0e104a38ee3",
-    "bytes": 2568
+    "sha256": "3a2e29736139f935a5f3f363ce3f37d178c3f5228983aa6f897f04b5b6e9c691",
+    "bytes": 2121
   },
   {
-    "file": "server.mjs",
-    "sha256": "50c21fc1f12d9bef2e1d835c231f400fe3849b6b4ec0fa9a42aa7245755bb105",
-    "bytes": 4820
+    "file": "README_部署与使用说明.md",
+    "sha256": "9ff462e2a01c36412a2a54880a6b9a10b38b49b8fd2c0dfd9a3effe39bf5a315",
+    "bytes": 7205
   },
   {
-    "file": "dist/server/index.js",
-    "sha256": "9e3bb4897bdb6ba5b5aacfc0f7aef9dff214cfc430c17e8e196eb50316dba0c0",
-    "bytes": 347010
+    "file": "build.mjs",
+    "sha256": "4812e17fca6702fc65f9879d3e1009bc83ca6437a803375db4bdfe9b653232d4",
+    "bytes": 1397
   },
   {
-    "file": "knowledge/补充来源登记_V1.2.json",
-    "sha256": "c4a9efc70ec2e9c5f3b5ca2077b8a14d1bc1f0efe7f86b94444ef64004534518",
-    "bytes": 6529
-  },
-  {
-    "file": "knowledge/补充来源登记_V1.3.json",
-    "sha256": "3910e41d775bacd8045b275889569ffc1c759a78e9c52d440183699a82bde696",
-    "bytes": 11582
-  },
-  {
-    "file": "knowledge/地方与社区补证及规则转译_V1.2.md",
-    "sha256": "13dfd02ec934a77686adca2e60a18f52fed186254c66d2b4dd6653cbab701c3c",
-    "bytes": 8687
-  },
-  {
-    "file": "knowledge/地方与社区补证及规则转译_V1.3.md",
-    "sha256": "71a2a37e38587309380417ab2c94a7af5be3a8c1de5f4292b83fd80ea0be60e2",
-    "bytes": 7448
-  },
-  {
-    "file": "knowledge/接口核验记录.json",
-    "sha256": "f8a05f82547eb4fd9193558ba80aaa71afd27ddcc6dc3e10241447e45706a083",
-    "bytes": 1025
-  },
-  {
-    "file": "knowledge/旧政策菜单_V1.json",
-    "sha256": "78aefb75deff65d16e293ab330c3194d98a4b563674916e252452c6e4428c804",
-    "bytes": 11081
-  },
-  {
-    "file": "knowledge/利益倾向与复评说明_V5.md",
-    "sha256": "75ff024c807ad15ec33bee203f77e4246c23384193d49e4ccf2bcc90bc9859d3",
-    "bytes": 2923
+    "file": "knowledge/observations.json",
+    "sha256": "44af8e8ba822d77bc1e39235dc2dd5231170e8c348b4a7dee906646556ac8090",
+    "bytes": 75192
   },
   {
     "file": "knowledge/两轮图表与制度说明_V3.md",
@@ -120,9 +60,29 @@
     "bytes": 5054
   },
   {
-    "file": "knowledge/真实接口核验记录.json",
-    "sha256": "f89c8baf9357a30595c30dcb1a79e471a7b400149bbac71e5f9b964c094e13d4",
-    "bytes": 5711
+    "file": "knowledge/利益倾向与复评说明_V5.md",
+    "sha256": "75ff024c807ad15ec33bee203f77e4246c23384193d49e4ccf2bcc90bc9859d3",
+    "bytes": 2923
+  },
+  {
+    "file": "knowledge/地方与社区补证及规则转译_V1.2.md",
+    "sha256": "13dfd02ec934a77686adca2e60a18f52fed186254c66d2b4dd6653cbab701c3c",
+    "bytes": 8687
+  },
+  {
+    "file": "knowledge/地方与社区补证及规则转译_V1.3.md",
+    "sha256": "71a2a37e38587309380417ab2c94a7af5be3a8c1de5f4292b83fd80ea0be60e2",
+    "bytes": 7448
+  },
+  {
+    "file": "knowledge/总体利益倾向与菜单审查.json",
+    "sha256": "0318cd400126fbe39d92f84b708407c07cc0ab5f12f26da66ce241875527ce81",
+    "bytes": 854
+  },
+  {
+    "file": "knowledge/接口核验记录.json",
+    "sha256": "f8a05f82547eb4fd9193558ba80aaa71afd27ddcc6dc3e10241447e45706a083",
+    "bytes": 1025
   },
   {
     "file": "knowledge/政策及中央AI核验.json",
@@ -135,19 +95,44 @@
     "bytes": 4125
   },
   {
-    "file": "knowledge/总体利益倾向与菜单审查.json",
-    "sha256": "0318cd400126fbe39d92f84b708407c07cc0ab5f12f26da66ce241875527ce81",
-    "bytes": 854
+    "file": "knowledge/旧政策菜单_V1.json",
+    "sha256": "78aefb75deff65d16e293ab330c3194d98a4b563674916e252452c6e4428c804",
+    "bytes": 11081
   },
   {
-    "file": "knowledge/observations.json",
-    "sha256": "44af8e8ba822d77bc1e39235dc2dd5231170e8c348b4a7dee906646556ac8090",
-    "bytes": 75192
+    "file": "knowledge/真实接口核验记录.json",
+    "sha256": "f89c8baf9357a30595c30dcb1a79e471a7b400149bbac71e5f9b964c094e13d4",
+    "bytes": 5711
+  },
+  {
+    "file": "knowledge/补充来源登记_V1.2.json",
+    "sha256": "c4a9efc70ec2e9c5f3b5ca2077b8a14d1bc1f0efe7f86b94444ef64004534518",
+    "bytes": 6529
+  },
+  {
+    "file": "knowledge/补充来源登记_V1.3.json",
+    "sha256": "3910e41d775bacd8045b275889569ffc1c759a78e9c52d440183699a82bde696",
+    "bytes": 11582
+  },
+  {
+    "file": "package.json",
+    "sha256": "baae4cf78cc82924c8ece28cb5079eb575da626bfc88b4dd3024da0c3ef6a1cb",
+    "bytes": 219
   },
   {
     "file": "public/app.js",
-    "sha256": "a0266b1af1dda519c200c3ab7b535444b734bda13c19d2826fc3170c87156603",
-    "bytes": 45108
+    "sha256": "d40b81e14a5f093628d5cff0203a4f58a038736015d4fd6baa3968a2ab7e92db",
+    "bytes": 46478
+  },
+  {
+    "file": "public/briefing.css",
+    "sha256": "97d489ff6411837c8fca610ab8df49d829426cb9d5df263701157d13603e83fa",
+    "bytes": 2927
+  },
+  {
+    "file": "public/briefing.js",
+    "sha256": "b7dda47f36628027ccb97487c5563d8580b752755813ac595c3f8c8e568714b6",
+    "bytes": 809
   },
   {
     "file": "public/data.js",
@@ -160,14 +145,49 @@
     "bytes": 6074
   },
   {
+    "file": "public/flags.js",
+    "sha256": "1a133f9f0d8eed2ea7603f7ca8675cd0b169bef229bfe4b00600421f9e76b6e2",
+    "bytes": 7513
+  },
+  {
     "file": "public/followup.js",
     "sha256": "6f46e898c1aba4f0791b09b96ee67beda6feea927265e7d38e70d19a2fd6774a",
     "bytes": 7036
   },
   {
+    "file": "public/history-host.css",
+    "sha256": "2f6aae8e811044369cd1b7aaff324feef8cb196896a696c987145ebbf886f53a",
+    "bytes": 1080
+  },
+  {
+    "file": "public/history-target.css",
+    "sha256": "bf72ddc65377844cbd5a8c6807db43f74d9d4ef4f62a4f56c62a9fec10048323",
+    "bytes": 2216
+  },
+  {
+    "file": "public/history.css",
+    "sha256": "1e53ea8febb0d4c7c968872db17e98fd7cfd1197936e172ab66c8146dc5717a9",
+    "bytes": 26234
+  },
+  {
+    "file": "public/history.html",
+    "sha256": "adc4924f12546594b75268fd33de7b1771a35d449f642237c4e5753efa5b66e3",
+    "bytes": 6404
+  },
+  {
+    "file": "public/history.js",
+    "sha256": "dd36ae1b6f909fd736cb47b1d075aa80df854f0baa82779b6576c0d964f0b922",
+    "bytes": 52557
+  },
+  {
     "file": "public/index.html",
-    "sha256": "96c309fb23b8e217cbe506fe1e449de2b1c2012fcb63d6a1a013304a75da1de0",
-    "bytes": 691
+    "sha256": "e98aae80e4e44ea2d4317e943368c96efaf4504b10a568f1698df875b2c51455",
+    "bytes": 3592
+  },
+  {
+    "file": "public/international_nickel_shares.js",
+    "sha256": "bb58a672abd73c12566f81c3cc270838de501e70782e19cd4dea358379016de7",
+    "bytes": 1635
   },
   {
     "file": "public/player-copy.js",
@@ -175,14 +195,29 @@
     "bytes": 19443
   },
   {
+    "file": "public/research_results.js",
+    "sha256": "311c408e059ff0254730701be64ed00a64fe9949012b74fba1ebcec80c973892",
+    "bytes": 248891
+  },
+  {
     "file": "public/review-chart.js",
     "sha256": "d6a12bf9455d4684fb9237b57107d62d1add60a41181b74a017aa78b0d856ac3",
     "bytes": 8021
   },
   {
+    "file": "public/sna.js",
+    "sha256": "4957e004e40a6e7efa7046666895d72c5e3e745daff8b1acd57fad3230bd6e60",
+    "bytes": 13436
+  },
+  {
+    "file": "public/spatial.js",
+    "sha256": "6d8e0ecf2726b793b33c1a624387e3997ca6770aa1ca3b512cf83e818f3dd620",
+    "bytes": 31458
+  },
+  {
     "file": "public/style.css",
-    "sha256": "d37d90b4910586fbd55f157836367d9c90643bca21fbbe7229d1ab9ad15ddf94",
-    "bytes": 10080
+    "sha256": "067bb43816189eb73bf097b43bd48e5448863157df00cbb7e4b78c98b52521c5",
+    "bytes": 10072
   },
   {
     "file": "scripts/build-worker.mjs",
@@ -235,18 +270,68 @@
     "bytes": 10558
   },
   {
+    "file": "server-bundle.mjs",
+    "sha256": "4a2e1703b80a039ab72ff4ffd75f08e810e14490adef126f8e5ada425dfa2133",
+    "bytes": 788049
+  },
+  {
+    "file": "server.mjs",
+    "sha256": "b54d7dac219763ecd250ee324b2ee05016d641a2ee997f11a9d640e6c05e1090",
+    "bytes": 4943
+  },
+  {
+    "file": "verify-local.mjs",
+    "sha256": "b7ab70d8edce7a9db2cd5124a3e1a130de4f73d2cfda9fd97e658c4ff692c535",
+    "bytes": 2212
+  },
+  {
     "file": "worker/followup.mjs",
     "sha256": "b7fbed172abd775cee6014388cf73e644ab0ad9e3967c629b7a3a73c6eb6e9eb",
     "bytes": 5804
   },
   {
     "file": "worker/government.mjs",
-    "sha256": "3af1e99188f69afc09714dbe62ab8e44ff3903fcf29aed10424b6511a09d37c1",
-    "bytes": 8921
+    "sha256": "62c4b02b4821e35f89d814fbffd628117ee28d1e39ff18eda969eade58da582a",
+    "bytes": 9086
   },
   {
     "file": "worker/handler.mjs",
     "sha256": "3acc80133d374b1da6e077d95c6e218872afba3a56294a0194dd2eeff14fd739",
     "bytes": 22852
+  },
+  {
+    "file": "公开交付说明.md",
+    "sha256": "5c750edff774b7a69154b4db49aab5282ff33e6aab4839b2b8b43e0751aefbd0",
+    "bytes": 914
+  },
+  {
+    "file": "地方与社区补证及规则转译_V1.3.md",
+    "sha256": "71a2a37e38587309380417ab2c94a7af5be3a8c1de5f4292b83fd80ea0be60e2",
+    "bytes": 7448
+  },
+  {
+    "file": "境内部署改造说明_V2.md",
+    "sha256": "9f3cee342198ff63d061294a7d20f1b0ca45e93eaa701636892600d573d1c7bd",
+    "bytes": 11303
+  },
+  {
+    "file": "当前政策与五方规则.md",
+    "sha256": "f773888185c273e717e4636e4712d538938912ccac0194868619ef0ea0444c74",
+    "bytes": 4125
+  },
+  {
+    "file": "本地能力建设文案更新说明.md",
+    "sha256": "c4518a2757d4731accd76d233436f48f56123f54134f53b098dd8ef654ba137f",
+    "bytes": 981
+  },
+  {
+    "file": "本版更新说明.md",
+    "sha256": "e7fd4a874fe6b4e1aa5c9b44c42111fbd31c5bf4a785ecf3b797e7fb9bb6a169",
+    "bytes": 639
+  },
+  {
+    "file": "补充来源登记_V1.3.json",
+    "sha256": "3910e41d775bacd8045b275889569ffc1c759a78e9c52d440183699a82bde696",
+    "bytes": 11582
   }
 ]
