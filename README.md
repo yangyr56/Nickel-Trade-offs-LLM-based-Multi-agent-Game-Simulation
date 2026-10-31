@@ -25,7 +25,8 @@ The project is built for research communication, teaching, and competition demon
 
 The screenshot below shows the deployed historical-evolution module:
 
-![Nickel Trade-off live interface](assets/cover-nickel-tradeoff.png)
+![Nickel Trade-off live interface](<img width="1673" height="940" alt="26ab880fd020e48e7f2a56704043baa8" src="https://github.com/user-attachments/assets/f5d9452b-a78e-4aa3-aaa2-5b3f283eed4d" />
+)
 
 ## Live Demo
 
